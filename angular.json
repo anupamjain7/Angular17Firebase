@@ -99,6 +99,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "angular-learning:build:production",
+              "serveTarget": "angular-learning:serve:production"
+            },
+            "development": {
+              "buildTarget": "angular-learning:build:development",
+              "serveTarget": "angular-learning:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }

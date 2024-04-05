@@ -60,5 +60,12 @@ Thumbs.db
 
 # Environment files
 sonar-project.properties
-.env
+/environments
+
 ../src/firebase-messaging-sw.js/
+# Firebase
+.firebaserc
+.firebase
+firebase.json
+*-debug.log
+.runtimeconfig.json
