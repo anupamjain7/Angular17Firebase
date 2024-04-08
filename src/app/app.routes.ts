@@ -4,11 +4,15 @@ import { AngularFireModule } from '@angular/fire/compat'
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
+import { VerifyEmailComponent } from './component/verify-email/verify-email.component';
+import { ForgotPasswordComponent } from './component/forgot-password/forgot-password.component';
 
 export const routes: Routes = [
     { path: '', redirectTo:'login', pathMatch: 'full' },
-    { path: 'login', component: LoginComponent },
-    { path: 'register', component: RegisterComponent },
-    { path: 'dashboard', component: DashboardComponent },
+    { path: 'login', component: LoginComponent, pathMatch: 'full' },
+    { path: 'register', component: RegisterComponent, pathMatch: 'full' },
+    { path: 'dashboard', component: DashboardComponent, pathMatch: 'full' },
+    { path: 'verify-email', component: VerifyEmailComponent, pathMatch: 'full'},
+    { path: 'forgot-password', component: ForgotPasswordComponent, pathMatch: 'full' },
     { path: 'custom-directive', component: CustomDirectiveComponent, pathMatch: 'full' },
 ];

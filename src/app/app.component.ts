@@ -4,7 +4,6 @@ import { AngularFireAuth } from '@angular/fire/compat/auth'
 
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { Firestore, collection, getDocs } from '@angular/fire/firestore';
-import { BrowserModule } from '@angular/platform-browser';
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from '../../environments/environment';
 import { CommonModule } from '@angular/common';
@@ -12,9 +11,9 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, 
+  imports: [RouterOutlet, RouterLink,
     RouterLinkActive, FormsModule,
-  CommonModule,
+    CommonModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
