@@ -4,8 +4,8 @@ import { AngularFireModule } from '@angular/fire/compat'
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
-import { VerifyEmailComponent } from './component/verify-email/verify-email.component';
-import { ForgotPasswordComponent } from './component/forgot-password/forgot-password.component';
+import { VerifyEmailComponent } from './auth/verify-email/verify-email.component';
+import { ForgotPasswordComponent } from './auth/forgot-password/forgot-password.component';
 
 export const routes: Routes = [
     { path: '', redirectTo:'login', pathMatch: 'full' },
