@@ -19,4 +19,62 @@
       </div>
       </div>
     </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card border-0 shadow p-3">
+            <h5 class="text-center text">Add Student</h5>
+          <form>
+          <div class="form-group">
+            <label for="firstname">First Name</label>
+            <input type="text" class="form-control" id="firstname" name="first_name" placeholder="Enter First Name" [(ngModel)]="first_name">
+          </div>
+          <div class="form-group">
+            <label for="secondname">Last Name</label>
+            <input type="text" class="form-control" id="secondname" name="last_name" placeholder="Enter Second Name" [(ngModel)]="last_name">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" [(ngModel)]="email">
+          </div>
+          <div class="form-group">
+            <label for="mobile">Mobile</label>
+            <input type="text" class="form-control" id="mobile" name="mobile" placeholder="mobile" [(ngModel)]="mobile">
+          </div>
+          <button type="button" class="btn btn-outline-success" (click)="addStudent()">Add Student</button>
+  
+        </form>
+        </div>
+      </div>
+      <div class="col-md-8 mt-5">
+          <h5 class="text-danger">Student List</h5>
+          <div class="card p-3">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">First Name</th>
+                  <th scope="col">Last Name</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Mobile</th>
+                  <th scope="col">Action</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let student of studentList">
+                  <td>{{student.first_name}}</td>
+                  <td>{{student.last_name}}</td>
+                  <td>{{student.email}}</td>
+                  <td>{{student.mobile}}</td>
+                  <td>
+                    <button class="btn btn-outline-danger" (click)="deleteStudent(student)">
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+               
+              </tbody>
+            </table>
+          </div>
+      </div>
+    </div>
 </div>
