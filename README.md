@@ -1,4 +1,4 @@
-# Implemented Angular Firebase Authentication
+# Implemented Angular 17 Firebase Authentication
 ## Features
 ### User Authentication:
 
